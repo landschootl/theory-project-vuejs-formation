@@ -1,5 +1,5 @@
 <template>
-  <div class="manage-store">
+  <div id="manage-store">
     <h3>Administration du magasin</h3>
     <button @click="openOrCloseStore()">{{store.open ? 'Fermer' : 'Ouvrir'}} le magasin</button>
     <p>Nom du magasin : <input type="text" v-model="store.name"/></p>
@@ -23,5 +23,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+  #manage-store {
+    background-color: aliceblue;
+    padding: 10px;
+  }
 </style>
